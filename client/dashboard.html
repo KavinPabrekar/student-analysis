@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="dashboard">
+  <h2>Student Dashboard</h2>
+
+  <div class="card">
+    <h3>Enter Marks</h3>
+    <input id="math" placeholder="Math">
+    <input id="science" placeholder="Science">
+    <input id="english" placeholder="English">
+    <button onclick="analyze()">Analyze</button>
+  </div>
+
+  <div class="card">
+    <h3>AI Result</h3>
+    <pre id="result"></pre>
+  </div>
+
+  <div class="card">
+    <h3>Progress Graph</h3>
+    <canvas id="chart"></canvas>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
